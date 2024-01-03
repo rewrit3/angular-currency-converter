@@ -4,6 +4,35 @@
       <h1>Currency Converter</h1>
     </article>
   </section>
+
+  <section>
+    <article>
+      <form>
+        <div>
+          <label for="amount">Amount</label>
+          <input name="amount" placeholder="Amount" />
+        </div>
+
+        <div>
+          <label for="from">From</label>
+          <select name="from">
+            <option value="">Select a currency</option>
+            <option value="USD">USD</option>
+            <option value="EUR">Euro</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="to">To</label>
+          <select name="to">
+            <option value="">Select a currency</option>
+            <option value="USD">USD</option>
+            <option value="EUR">Euro</option>
+          </select>
+        </div>
+      </form>
+    </article>
+  </section>
 </main>
 
 <router-outlet></router-outlet>
