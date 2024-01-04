@@ -10,7 +10,12 @@
       <form>
         <div>
           <label for="amount">Amount</label>
-          <input name="amount" placeholder="Amount" />
+          <input
+            [formControl]="amount"
+            id="amount"
+            name="amount"
+            type="text"
+            placeholder="Amount" />
         </div>
 
         <div>
