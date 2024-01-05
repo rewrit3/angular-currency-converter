@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterOutlet } from "@angular/router";
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, ReactiveFormsModule } from "@angular/forms";
 
 @Component({
   selector: "app-root",
@@ -13,5 +13,5 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 export class AppComponent {
   title = "Currency Converter";
 
-  amount = new FormControl('1.33');
+  amount = new FormControl("1.33");
 }
