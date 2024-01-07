@@ -1,42 +1,45 @@
 <main>
-  <section>
-    <article>
-      <h1>Currency Converter</h1>
-    </article>
-  </section>
+  <section
+    class="container d-flex justify-content-center align-items-center cc">
+    <section class="card cc__card">
+      <section class="card-body cc__card__body">
+        <article>
+          <h1 class="card-title cc__card__body__title">Currency Converter</h1>
+        </article>
 
-  <section>
-    <article>
-      <form>
-        <div>
-          <label for="amount">Amount</label>
-          <input
-            [formControl]="amount"
-            id="amount"
-            name="amount"
-            type="text"
-            placeholder="Amount" />
-        </div>
+        <article>
+          <form>
+            <div>
+              <label for="amount">Amount</label>
+              <input
+                [formControl]="amount"
+                id="amount"
+                name="amount"
+                type="text"
+                placeholder="Amount" />
+            </div>
 
-        <div>
-          <label for="from">From</label>
-          <select name="from">
-            <option value="">Select a currency</option>
-            <option value="USD">USD</option>
-            <option value="EUR">Euro</option>
-          </select>
-        </div>
+            <div>
+              <label for="from">From</label>
+              <select name="from">
+                <option value="">Select a currency</option>
+                <option value="USD">USD</option>
+                <option value="EUR">Euro</option>
+              </select>
+            </div>
 
-        <div>
-          <label for="to">To</label>
-          <select name="to">
-            <option value="">Select a currency</option>
-            <option value="USD">USD</option>
-            <option value="EUR">Euro</option>
-          </select>
-        </div>
-      </form>
-    </article>
+            <div>
+              <label for="to">To</label>
+              <select name="to">
+                <option value="">Select a currency</option>
+                <option value="USD">USD</option>
+                <option value="EUR">Euro</option>
+              </select>
+            </div>
+          </form>
+        </article>
+      </section>
+    </section>
   </section>
 </main>
 

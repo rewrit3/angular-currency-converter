@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/scss/bootstrap";
+
+html,
+body {
+  background: linear-gradient(top, #0c2d48 50%, #b1d4e0 50%);
+  background: linear-gradient(top, #0c2d48 50%, #b1d4e0 50%);
+  background: linear-gradient(to bottom, #0c2d48 50%, #b1d4e0 50%);
+  -webkit-font-smoothing: antialiased;
+
+  @media (max-width: 1080px) {
+    font-size: 93.75%;
+  }
+
+  @media (max-width: 720px) {
+    font-size: 87.5%;
+  }
+}
+
+body,
+main {
+  height: 100vh;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: bold;
+}
