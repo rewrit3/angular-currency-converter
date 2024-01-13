@@ -2,42 +2,80 @@
   <section
     class="container d-flex justify-content-center align-items-center cc">
     <section class="card cc__card">
-      <section class="card-body cc__card__body">
-        <article>
-          <h1 class="card-title cc__card__body__title">Currency Converter</h1>
-        </article>
+      <section class="card-body p-0 cc__card__body">
+        <section class="row">
+          <article>
+            <h1 class="card-title text-center cc__card__body__title">
+              Currency Converter
+            </h1>
+          </article>
+        </section>
 
-        <article>
-          <form>
-            <div>
-              <label for="amount">Amount</label>
-              <input
-                [formControl]="amount"
-                id="amount"
-                name="amount"
-                type="text"
-                placeholder="Amount" />
-            </div>
+        <section class="row">
+          <form class="cc__card__body__form">
+            <section class="cc__card__body__form__grid">
+              <label
+                class="text-start cc__card__body__form__grid__label"
+                for="amount"
+                >Amount</label
+              >
+              <article
+                class="d-flex align-items-center overflow-hidden cc__card__body__form__grid__hold">
+                <span class="cc__card__body__form__grid__hold__prefix">$</span>
+                <input
+                  [formControl]="amount"
+                  class="w-100 cc__card__body__form__grid__hold__inputselect"
+                  id="amount"
+                  name="amount"
+                  type="text"
+                  placeholder="Amount" />
+              </article>
 
-            <div>
-              <label for="from">From</label>
-              <select name="from">
+              <label
+                class="text-start cc__card__body__form__grid__label"
+                for="from"
+                >From</label
+              >
+              <select
+                class="w-100 cc__card__body__form__grid__inputselect"
+                name="from">
                 <option value="">Select a currency</option>
                 <option value="USD">USD</option>
                 <option value="EUR">Euro</option>
               </select>
-            </div>
 
-            <div>
-              <label for="to">To</label>
-              <select name="to">
+              <div></div>
+
+              <button class="cc__card__body__form__grid__button" type="button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-left-right"
+                  viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5" />
+                </svg>
+              </button>
+
+              <label
+                class="text-start cc__card__body__form__grid__label"
+                for="to"
+                >To</label
+              >
+
+              <select
+                class="w-100 cc__card__body__form__grid__inputselect"
+                name="to">
                 <option value="">Select a currency</option>
                 <option value="USD">USD</option>
                 <option value="EUR">Euro</option>
               </select>
-            </div>
+            </section>
           </form>
-        </article>
+        </section>
       </section>
     </section>
   </section>

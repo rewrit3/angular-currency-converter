@@ -1,15 +1,108 @@
 .cc {
   height: 100vh;
 
-  .cc__card {
-    // padding: 9.375rem 18.75rem;
+  &__card {
+    padding-inline: 6.25rem;
+    padding-block: 6.25rem;
+    border-radius: 24px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
 
-    .cc__card__body {
-      padding: 32px;
-
-      .cc__card__body__title {
-        margin-bottom: 5rem;
+    &__body {
+      &__title {
+        margin-bottom: 4rem;
         color: #0c2d48;
+      }
+
+      &__form {
+        &__grid {
+          display: grid;
+          gap: 0.25rem 1rem;
+          grid-auto-flow: column;
+          grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) auto minmax(
+              100px,
+              1fr
+            );
+          grid-template-rows: auto [input-row-start] auto;
+
+          &__label {
+            font-weight: bold;
+            color: #0c2d48;
+          }
+
+          &__hold {
+            padding: 0.5rem;
+            border: none;
+            border-radius: 6px;
+            outline: 2px solid #ced4da;
+
+            &:hover {
+              border: none;
+              outline: 2px solid #adb5bd;
+
+              a,
+              i {
+                &.bi {
+                  color: rgb(153, 153, 245);
+                }
+              }
+            }
+
+            &:focus {
+              background-color: white;
+              outline: 2px solid rgb(153, 153, 245);
+            }
+
+            a,
+            i {
+              &.bi {
+                color: rgba(82, 82, 82, 1);
+              }
+            }
+
+            &__prefix {
+              color: #adb5bd;
+            }
+
+            &__inputselect {
+              border: none;
+              font-weight: bold;
+              color: #0c2d48;
+            }
+          }
+
+          &__button {
+            height: 50px;
+            width: 50px;
+            margin: auto;
+            text-align: center;
+            border-radius: 50%;
+            outline: 2px solid #d2d2d2;
+
+            &:hover {
+              outline: 2px solid rgb(153, 153, 245);
+            }
+
+            &:active {
+              i:before {
+                animation: flip 0.2s 1 linear;
+              }
+            }
+
+            @keyframes flip {
+              0% {
+                transform: rotateY(0deg);
+              }
+
+              50% {
+                transform: rotateY(180deg);
+              }
+
+              to {
+                transform: rotateY(0deg);
+              }
+            }
+          }
+        }
       }
     }
   }
