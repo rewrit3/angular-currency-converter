@@ -105,29 +105,46 @@
               }
             }
 
-            // &:hover {
-            //   outline: 2px solid rgb(153, 153, 245);
-            // }
+            &:active {
+              svg:before {
+                animation: flip 0.2s 1 linear;
+              }
+            }
 
-            // &:active {
-            //   i:before {
-            //     animation: flip 0.2s 1 linear;
-            //   }
-            // }
+            @keyframes flip {
+              0% {
+                transform: rotateY(0deg);
+              }
 
-            // @keyframes flip {
-            //   0% {
-            //     transform: rotateY(0deg);
-            //   }
+              50% {
+                transform: rotateY(180deg);
+              }
 
-            //   50% {
-            //     transform: rotateY(180deg);
-            //   }
+              to {
+                transform: rotateY(0deg);
+              }
+            }
+          }
+        }
 
-            //   to {
-            //     transform: rotateY(0deg);
-            //   }
-            // }
+        &__button {
+          &__btn {
+            width: 15%;
+            height: 3.125rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            transition: 0.2s;
+            color: #fff;
+            background-color: #0c2d48;
+
+            &:hover {
+              transition: 0.2s;
+              color: #0c2d48;
+              background-color: #b1d4e0;
+
+              border: none;
+            }
           }
         }
       }
