@@ -27,22 +27,25 @@
                   class="w-100 cc__card__body__form__grid__hold__inputselect"
                   id="amount"
                   name="amount"
-                  type="text"
-                  placeholder="Amount" />
+                  type="number"
+                  step="0.01"
+                  placeholder="Type the amount" />
               </article>
 
               <label
                 class="text-start cc__card__body__form__grid__label"
                 for="from"
-                >From</label
-              >
-              <select
-                class="w-100 cc__card__body__form__grid__inputselect"
-                name="from">
-                <option value="">Select a currency</option>
-                <option value="USD">USD</option>
-                <option value="EUR">Euro</option>
-              </select>
+                >From
+              </label>
+              <article
+                class="d-flex align-items-center overflow-hidden cc__card__body__form__grid__hold">
+                <select
+                  class="w-100 cc__card__body__form__grid__hold__inputselect"
+                  name="from">
+                  <option value="EUR">Euro</option>
+                  <option value="USD">USD</option>
+                </select>
+              </article>
 
               <div></div>
 
@@ -65,14 +68,15 @@
                 for="to"
                 >To</label
               >
-
-              <select
-                class="w-100 cc__card__body__form__grid__inputselect"
-                name="to">
-                <option value="">Select a currency</option>
-                <option value="USD">USD</option>
-                <option value="EUR">Euro</option>
-              </select>
+              <article
+                class="d-flex align-items-center overflow-hidden cc__card__body__form__grid__hold">
+                <select
+                  class="w-100 cc__card__body__form__grid__hold__inputselect"
+                  name="to">
+                  <option value="USD">USD</option>
+                  <option value="EUR">Euro</option>
+                </select>
+              </article>
             </section>
           </form>
         </section>
