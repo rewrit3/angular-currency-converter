@@ -92,21 +92,21 @@
               outline: 2px solid #adb5bd;
               background-color: #fff;
 
-              svg {
+              i {
                 &.bi {
                   color: #adb5bd;
                 }
               }
             }
 
-            svg {
+            i {
               &.bi {
                 color: #0c2d48;
               }
             }
 
             &:active {
-              svg:before {
+              i:before {
                 animation: flip 0.2s 1 linear;
               }
             }
@@ -131,6 +131,7 @@
           &__btn {
             width: 15%;
             height: 3.125rem;
+            font-size: 1.125rem;
             font-weight: bold;
             border: none;
             border-radius: 6px;
