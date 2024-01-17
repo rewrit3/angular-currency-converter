@@ -1,12 +1,13 @@
 @import "styles/mixins";
+@import "styles/variables";
 @import "styles/loading";
 @import "bootstrap/scss/bootstrap";
 
 html,
 body {
-  background: linear-gradient(top, #0c2d48 50%, #b1d4e0 50%);
-  background: linear-gradient(top, #0c2d48 50%, #b1d4e0 50%);
-  background: linear-gradient(to bottom, #0c2d48 50%, #b1d4e0 50%);
+  background: linear-gradient(top, $blue-0 50%, $blue-3 50%);
+  background: linear-gradient(top, $blue-0 50%, $blue-3 50%);
+  background: linear-gradient(to bottom, $blue-0 50%, $blue-3 50%);
   -webkit-font-smoothing: antialiased;
 
   @media (max-width: 1080px) {
@@ -44,22 +45,3 @@ h6,
 strong {
   font-weight: bold;
 }
-
-/*
-  #0C2D48
-  #145DA0
-  #2E8BC0
-  #B1D4E0
-
-  $white:    #fff;
-  $gray-100: #f8f9fa;
-  $gray-200: #e9ecef;
-  $gray-300: #dee2e6;
-  $gray-400: #ced4da;
-  $gray-500: #adb5bd;
-  $gray-600: #6c757d;
-  $gray-700: #495057;
-  $gray-800: #343a40;
-  $gray-900: #212529;
-  $black:    #000;
-*/
