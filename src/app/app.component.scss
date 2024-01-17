@@ -83,7 +83,7 @@
             background-color: #fff;
 
             &:focus {
-              outline: 2px solid #adb5bd;
+              outline: 2px solid #ced4da;
               background-color: #fff;
             }
 
@@ -91,12 +91,6 @@
               border: none;
               outline: 2px solid #adb5bd;
               background-color: #fff;
-
-              i {
-                &.bi {
-                  color: #adb5bd;
-                }
-              }
             }
 
             i {
