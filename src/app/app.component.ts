@@ -3,7 +3,7 @@ import { CommonModule } from "@angular/common";
 import { RouterOutlet } from "@angular/router";
 import { HttpClient } from "@angular/common/http";
 import { FormControl, ReactiveFormsModule } from "@angular/forms";
-// import { map } from "rxjs/operators";
+import { map } from "rxjs/operators";
 
 @Component({
   selector: "app-root",
@@ -26,6 +26,19 @@ export class AppComponent implements OnInit {
   private fetchCurrenciesAndCountries() {
     this.http
       .get("https://restcountries.com/v3.1/all?fields=currencies")
+      .pipe(
+        map((responseData) => {
+          const currenciesArray = [];
+
+          for (const key in responseData) {
+            if (responseData.hasOwnProperty(key)) {
+              currenciesArray.push({ ...responseData[key], id: key });
+            }
+          }
+
+          return currenciesArray;
+        })
+      )
       .subscribe((currencies) => {
         console.log(currencies);
       });
