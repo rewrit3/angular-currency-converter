@@ -28,15 +28,15 @@ export class AppComponent implements OnInit {
       .get("https://restcountries.com/v3.1/all?fields=currencies")
       .pipe(
         map((responseData) => {
-          const currenciesArray = [];
+          // const currenciesArray = [];
 
-          for (const key in responseData) {
-            if (responseData.hasOwnProperty(key)) {
-              currenciesArray.push({ ...responseData[key], id: key });
-            }
-          }
+          // for (const key in responseData) {
+          //   // if (responseData.hasOwnProperty(key)) {
+          //   //   currenciesArray.push({ ...responseData[key], id: key });
+          //   // }
+          // }
 
-          return currenciesArray;
+          // return currenciesArray;
         })
       )
       .subscribe((currencies) => {
