@@ -31,9 +31,11 @@ export class AppComponent implements OnInit {
           // const currenciesArray = [];
 
           // for (const key in responseData) {
-          //   // if (responseData.hasOwnProperty(key)) {
-          //   //   currenciesArray.push({ ...responseData[key], id: key });
-          //   // }
+          //   const hasKeyProperty = Object.prototype.hasOwnProperty.call(key, key);
+
+          //   if (hasKeyProperty) {
+          //      currenciesArray.push({ ...responseData[key], id: key });
+          //   }
           // }
 
           // return currenciesArray;
